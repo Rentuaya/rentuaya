@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background-color: #0c2438;
+}
+/* ---------About ME----------- */
+.about{
+    position: relative;
+    width: 100%;
+    height: 95vh;
+}
+.logo{
+    width:130px;
+}
+/* --------Navigators-------- */
+nav{
+    background-color: #173f5f;
+    display: flex;
+    width: 100%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+nav img{
+    margin-left: 30px;
+    border-radius: 5%;
+}
+nav ul{
+    margin-right: 80px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #dadada;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color:#fafa17;
+}
+nav ul li a:active{
+    color:red;
+}
+/* --------My Information---------- */
+.me{
+    margin-left:5%;
+    margin-top: 2%;
+}
+.me h1{
+    font-size: 50px;
+    color:#dddddd;
+    margin-bottom: 20px;
+}
+.me h1 span{
+    color:orange;
+}
+.me p{
+    color:#e9e9e9;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+.tab-title{
+    display: flex;
+    margin:20px 0 10px;
+}
+.tab-link{
+    margin-right: 40px;
+    color: #dadada;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+}
+.tab-link:hover{
+    color:#fafa17;
+}
+.tab-link::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left:0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-link.active-link::after{
+    width: 50%;
+}
+.tab-content ul li{
+    list-style: none;
+    margin: 10px 0;
+    color:#dadada;
+}
+.tab-content ul li span{
+    color: orange;
+}
+.tab-content{
+    display: none;
+}
+.tab-content.active-tab{
+    display: block;
+}
+/* ---------Profile Images---------- */
+.pics{
+    width: 30%;
+    height: 50%;
+    position: absolute;
+    top:25%;
+    right:100px;
+}
+.pics img{
+    height: 100%;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+.pics .profile{
+    border-radius: 50%;
+}
+.pics .background{
+    border-radius: 25%;
+}
+.pics:hover .background{
+    left:40%;
+}
+.pics:hover .profile{
+    left:40%;
+}
+/* ---------Footer--------- */
+footer{
+    background-color: #173f5f;
+    bottom:0;
+    width:100%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    text-align: center;
+}
+footer p{
+    color:#dadada;
+}
