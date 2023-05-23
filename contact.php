@@ -1,3 +1,8 @@
+<?php
+    session_start();
+    if(isset($_SESSION['id']) && isset($_SESSION['username']))
+    {
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -7,23 +12,35 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- Title -->
-        <title>About Me!</title>
+        <title>About Me</title>
 
         <!-- Customized Css Style -->
         <link rel="stylesheet" href="css/contact.css">
 
     </head>
+    <style>
+        nav ul li p{
+            color: #dadada;
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+        nav ul li p span{
+            color:#fafa17;
+        }
+    </style>
     <body>
         <div class="contact">
             <nav>
-                <a href="index.html">
+                <a href="home.php">
                     <img src="img/logo.png" class="logo">
                 </a>
                 <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="gallery.html">GALLERY</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><p>HELLO, <span><?php echo $_SESSION['username']; ?></span></p></li>
+                    <li><a href="home.php">HOME</a></li>
+                    <li><a href="about.php">ABOUT</a></li>
+                    <li><a href="gallery.php">GALLERY</a></li>
+                    <li><a href="contact.php">CONTACT</a></li>
+                    <li><a class="logout" href="logout.php">LOGOUT</a></li>
                 </ul>
             </nav>
             <!-- ---------Contact ME-------- -->
@@ -94,3 +111,9 @@
         }
     </script>
 </html>
+<?php
+    }else{
+        header("location: index.php");
+        exit();
+    }
+?>
