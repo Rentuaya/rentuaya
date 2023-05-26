@@ -1,4 +1,4 @@
-### Hi there 👋
+###Open this file to view my youtube recorded video link :D
 
 <!--
 Name: Cedric C. Rentuaya
