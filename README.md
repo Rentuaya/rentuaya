@@ -1,8 +1,4 @@
-###Open this file to view my youtube recorded video link :D
+#Year/Block: 2-C
+#Name: Cedric C. Rentuaya
+#Recorded Video Link: https://youtu.be/CTILqA-jHoQ
 
-<!--
-Name: Cedric C. Rentuaya
-Year/Block: 2-C
-
-Recorded Video Link: https://youtu.be/CTILqA-jHoQ
--->
